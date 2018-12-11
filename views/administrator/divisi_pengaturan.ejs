@@ -1,0 +1,156 @@
+<div class="row">
+	<div class="col-xl-12">
+		<div class="card bg-secondary shadow">
+			<form method="POST">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 order-lg-2">
+						<div class="card-profile-image">
+							<a>
+								<img src="/assets/pengurus/img/theme/.jpg" class="rounded-circle">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="card-body pt-6 pt-md-2 mt-6">
+					<!-- Informasi -->
+					<h6 class="heading-small text-muted mb-4">Informasi pengguna</h6>
+					<div class="pl-lg-4">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-username">Username</label>
+									<input type="text" name="username" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="<%= divisi.username %>">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-password">Password</label>
+									<input type="password" name="password" id="input-password" class="form-control form-control-alternative" placeholder="Password" value="<%= divisi.password %>">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-nama">Nama</label>
+									<input type="text" name="nama" id="input-nama" class="form-control form-control-alternative" placeholder="Nama lengkap" value="<%= divisi.nama %>">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-email">Email</label>
+									<input type="email" name="email" id="input-email" class="form-control form-control-alternative" placeholder="alvri@example.com" value="<%= divisi.email %>">
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<!-- Tentang -->
+					<h6 class="heading-small text-muted mb-4">Tentang divisi</h6>
+					<div class="pl-lg-4">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label class="form-control-label" for="input-fakultas">Tentang Divisi</label>
+									<textarea rows="4" class="form-control form-control-alternative" placeholder="Tentang divisi."><%= divisi.tentang %></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<!-- Pengaturan -->
+					<div class="text-center border-0 pt-1">
+						<div class="d-flex justify-content-between">
+							<span></span>
+							<button class="btn btn-xm btn-default" data-original-title="Simpan Berita" style="width: 100%">
+								<div>
+									<i class="ni ni-check-bold"></i>
+									<span>Simpan</span>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="col pt-5">
+		<div class="card shadow">
+			<div class="card-header border-0">
+				<h3 class="mb-0">
+					Daftar Anggota
+					<a href="/administrator/divisi/<%= divisi.id %>/tambah" class="btn btn-sm btn-success float-right"><i class="ni ni-fat-add"></i> Tambah Anggota</a>
+				</h3>
+			</div>
+			<div class="table-responsive">
+				<table class="table align-items-center table-flush">
+					<thead class="thead-light">
+						<tr class="text-center">
+							<th scope="col">Nomor</th>
+							<th scope="col">Nama</th>
+							<th scope="col">Jabatan</th>
+							<th scope="col">Program Studi</th>
+							<th scope="col">Telepon</th>
+							<th scope="col">Pengaturan</th>
+						</tr>
+					</thead>
+					<tbody class="text-left">
+						<% for(var i=0; i < anggota.length; i++) { %>
+							<tr>
+								<th scope="row" class="text-center">
+									<div class="media align-items-center">
+										<div class="media-body">
+											<span class="mb-0 text-sm"><%= i+1 %></span>
+										</div>
+									</div>
+								</th>
+								<td>
+									<span class="badge badge-dot"><%= anggota[i].nama %></span>
+								</td>
+								<td>
+									<span class="badge badge-dot"><%= anggota[i].jabatan %></span>
+								</td>
+								<td>
+									<span class="badge badge-dot"><%= anggota[i].prodi %></span>
+								</td>
+								<td>
+									<span class="badge badge-dot"><%= anggota[i].telepon %></span>
+								</td>
+								<td class="text-center">
+									<a href="/administrator/divisi/<%= divisi.id %>/<%= anggota[i].id %>" class="btn btn-sm btn-warning"><i class="ni ni-ruler-pencil"></i> Edit</a>
+									<a href="/administrator/divisi/<%= divisi.id %>/<%= anggota[i].id %>/hapus" class="btn btn-sm btn-danger"><i class="ni ni-fat-remove"></i> Hapus</a>
+								</td>
+							</tr>
+						<% } %>
+					</tbody>
+				</table>
+			</div>
+			<div class="card-footer py-4">
+				<nav aria-label="...">
+					<ul class="pagination justify-content-end mb-0">
+						<li class="page-item disabled">
+							<a class="page-link" href="#" tabindex="-1">
+								<i class="fas fa-angle-left"></i>
+								<span class="sr-only">Previous</span>
+							</a>
+						</li>
+						<li class="page-item active">
+							<a class="page-link" href="#">1</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#">
+								<i class="fas fa-angle-right"></i>
+								<span class="sr-only">Next</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

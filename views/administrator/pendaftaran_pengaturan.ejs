@@ -1,0 +1,122 @@
+<div class="row">
+	<div class="col-xl-12 order-xl-1">
+		<div class="card bg-secondary shadow">
+			<div class="row justify-content-center">
+				<div class="col-lg-3 order-lg-2">
+					<div class="card-profile-image">
+						<a>
+							<img src="/assets/pengurus/img/theme/<%= data.foto %>.jpg" class="rounded-circle">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-body pt-4 pt-md-4 mt-7">
+				<form method="POST">
+					<!-- Pengaturan -->
+					<h6 class="heading-small text-muted mb-2">Divisi</h6>
+					<div class="pl-lg-4">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<input type="text" name="divisi" id="input-divisi" class="form-control form-control-alternative" placeholder="Divisi" value="<%= data.divisi %>">
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<!-- Informasi -->
+					<h6 class="heading-small text-muted mb-4">Informasi anggota</h6>
+					<div class="pl-lg-4">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-nama">Nama</label>
+									<input type="text" name="nama" id="input-nama" class="form-control form-control-alternative" placeholder="Nama lengkap" value="<%= data.nama %>">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-jkelamin">Jenis Kelamin</label>
+									<input type="text" name="jkelamin" id="input-jkelamin" class="form-control form-control-alternative" placeholder="Jenis Kelamin" value="<%= data.jkelamin %>">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-lahir-tempat">Tempat Lahir</label>
+									<input type="text" name="lahir_tempat" id="input-lahir-tempat" class="form-control form-control-alternative" placeholder="Tempat lahir" value="<%= data.lahir_tempat %>">
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label class="form-control-label" for="input-lahir-tanggal">Tanggal Lahir</label>
+									<input type="date" name="lahir_tanggal" id="input-lahir-tanggal" class="form-control form-control-alternative" placeholder="Tanggal lahir" value="<%= data.lahir_tanggal %>">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label class="form-control-label" for="input-telepon">Telepon</label>
+									<input type="text" name="telepon" id="input-telepon" class="form-control form-control-alternative" placeholder="Telepon" value="<%= data.telepon %>">
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<!-- Tentang -->
+					<h6 class="heading-small text-muted mb-4">Tentang anggota</h6>
+					<div class="pl-lg-4">
+						<div class="row">
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label class="form-control-label" for="input-fakultas">Fakultas</label>
+									<input type="text" name="fakultas" id="input-fakultas" class="form-control form-control-alternative" placeholder="Fakultas" value="<%= data.fakultas %>">
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label class="form-control-label" for="input-prodi">Program Studi</label>
+									<input type="text" name="prodi" id="input-prodi" class="form-control form-control-alternative" placeholder="Program Studi" value="<%= data.prodi %>">
+								</div>
+							</div>
+							<div class="col-lg-4">
+								<div class="form-group">
+									<label class="form-control-label" for="input-nim">Nomor Induk Mahasiswa</label>
+									<input type="text" name="nim" id="input-nim" class="form-control form-control-alternative" placeholder="Nomor Induk Mahasiswa" value="<%= data.nim %>">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label class="form-control-label" for="input-fakultas">Tentang</label>
+									<textarea name="tentang" rows="4" class="form-control form-control-alternative" placeholder="Tentang saya."><%= data.tentang %></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="my-4" />
+					<!-- Pengaturan -->
+					<div class="text-center border-0 pt-1">
+						<div class="d-flex justify-content-between">
+							<button type="button" class="btn btn-danger float-left" data-original-title="Batal">
+								<div>
+									<i class="ni ni-fat-remove"></i>
+									<span>Batal</span>
+								</div>
+							</button>
+							<button class="btn btn-default float-right" data-original-title="Simpan">
+								<div>
+									<i class="ni ni-check-bold"></i>
+									<span>Simpan</span>
+								</div>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

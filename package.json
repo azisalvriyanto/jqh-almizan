@@ -1,0 +1,36 @@
+{
+  "name": "jqh-almizan",
+  "version": "2.0.0",
+  "description": "Al-Mizan",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.3.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "al-mizan",
+    "uin",
+    "uin-suka",
+    "uin",
+    "sunan",
+    "kalijaga"
+  ],
+  "author": "Alvriyanto Azis",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azisalvriyanto/jqh-almizan.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azisalvriyanto/jqh-almizan/issues"
+  },
+  "homepage": "https://github.com/azisalvriyanto/jqh-almizan#readme"
+}

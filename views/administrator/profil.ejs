@@ -1,0 +1,180 @@
+<form method="POST" class="row">
+	<!-- <div class="col-xl-12 order-xl-1">
+		<div class="card bg-secondary shadow">
+			<div class="card-header bg-white border-0">
+				<div class="row align-items-center">
+					<div class="col-8">
+						<h3 class="mb-0">Akun</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="pl-lg-4">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-username">Username</label>
+								<input name="username" type="text" id="input-username" class="form-control form-control-alternative" placeholder="Username" value="<%= data.username %>">
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-password">Kata Sandi</label>
+								<input name="password" type="password" id="input-password" class="form-control form-control-alternative" placeholder="Password" value="<%= data.password %>">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+	<div class="col-xl-12 order-xl-2 pt-5 mt-xl-0">
+		<div class="card bg-secondary shadow">
+			<div class="card-header bg-white border-0">
+				<div class="row align-items-center">
+					<div class="col-8">
+						<h3 class="mb-0">Profil</h3>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<!-- Informasi -->
+				<h6 class="heading-small text-muted mb-4">Informasi</h6>
+				<div class="pl-lg-4">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group card-profile-image mb-8 pt-3">
+								<a>
+									<img src="/assets/pengurus/img/theme/team-1-800x800.jpg" class="rounded-circle">
+								</a>
+							</div>
+							<div class="form-group">
+								<label class="form-control-label" for="input-Moto">Moto</label>
+								<textarea name="moto" id="input-moto" class="form-control form-control-alternative" rows="4" placeholder="Moto organisasi."><%= data.moto %></textarea>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-nama-panjang">Nama Panjang Organisasi</label>
+								<input name="nama_panjang" type="text" id="input-nama-panjang" class="form-control form-control-alternative" placeholder="Nama Panjang Organisasi" value="<%= data.nama_panjang %>">
+							</div>
+							<div class="form-group">
+								<label class="form-control-label" for="input-nama-panjang">Nama Pendek Organisasi</label>
+								<input name="nama_pendek" type="text" id="input-nama-pendek" class="form-control form-control-alternative" placeholder="Nama Pendek Organisasi" value="<%= data.nama_pendek %>">
+							</div>
+							<div class="form-group">
+								<label class="form-control-label" for="input-berdiri-tanggal">Tanggal Berdiri</label>
+								<input name="tanggal" type="date" id="input-berdiri-tanggal" class="form-control form-control-alternative" value="<%= data.tanggal %>">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<!-- Tentang -->
+				<h6 class="heading-small text-muted mb-4">Visi dan Misi</h6>
+				<div class="pl-lg-4">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-visi">Visi</label>
+								<textarea name="visi" rows="5" class="form-control form-control-alternative" placeholder="Visi."><%= data.visi %></textarea>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-misi">Misi</label>
+								<textarea name="misi" rows="5" class="form-control form-control-alternative" placeholder="Misi."><%= data.misi %></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<!-- Tentang -->
+				<h6 class="heading-small text-muted mb-4">Kontak</h6>
+				<div class="pl-lg-4">
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-telepon">Telepon</label>
+								<input name="telepon" type="text" id="input-telepon" class="form-control form-control-alternative" placeholder="+628XXXXXXXXXX" value="<%= data.telepon %>">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-email">E-mail</label>
+								<input name="email" type="email" id="input-email" class="form-control form-control-alternative" placeholder="azis@alvri.yanto" value="<%= data.email %>">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6 col-md-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-facebook">Facebook</label>
+								<input name="facebook" type="text" id="input-facebook" class="form-control form-control-alternative" placeholder="https://www.facebook.com/username" value="<%= data.facebook %>">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-instagram">Instagram</label>
+								<input name="instagram" type="text" id="input-instagram" class="form-control form-control-alternative" placeholder="https://www.instagram.com/username" value="<%= data.instagram %>">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label class="form-control-label" for="input-youtube">Youtube</label>
+								<input name="youtube" type="text" id="input-youtube" class="form-control form-control-alternative" placeholder="https://www.youtube.com/channel/username" value="<%= data.youtube %>">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label class="form-control-label" for="input-alamat">Alamat</label>
+								<textarea name="alamat" rows="3" class="form-control form-control-alternative" placeholder="Alamat lengkap organisasi."><%= data.alamat %></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<!-- Tentang -->
+				<h6 class="heading-small text-muted mb-4">Tentang</h6>
+				<div class="pl-lg-4">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-deskripsi">Deskripsi</label>
+								<textarea name="deskripsi" rows="8" class="form-control form-control-alternative" placeholder="Deskripsi singkat organisasi."><%= data.deskripsi %></textarea>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form-group">
+								<label class="form-control-label" for="input-sejarah">Sejarah</label>
+								<textarea name="sejarah" rows="8" class="form-control form-control-alternative" placeholder="Sejarah organisasi."><%= data.sejarah %></textarea>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="my-4" />
+				<!-- Pengaturan -->
+				<div class="text-center border-0 pt-1">
+					<div class="d-flex justify-content-between">
+						<span></span>
+						<button class="btn btn-xm btn-default" data-original-title="Simpan Berita" style="width: 100%">
+							<div>
+								<i class="ni ni-check-bold"></i>
+								<span>Simpan</span>
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>

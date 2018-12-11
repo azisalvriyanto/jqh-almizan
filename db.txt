@@ -1,0 +1,230 @@
+database anggota
+
+const data_type = new mongoose.Schema({
+	divisi: {
+		type: String,
+		trim: true
+	},
+	jabatan: {
+		type: String,
+		trim: true
+	},
+	nama: {
+		type: String,
+		trim: true
+	},
+	jkelamin: {
+		type: String,
+		trim: true
+	},
+	lahir_tempat: {
+		type: String,
+		trim: true
+	},
+	lahir_tanggal: {
+		type: String,
+		trim: true
+	},
+	telepon: {
+		type: String,
+		trim: true
+	},
+	nim: {
+		type: Number,
+		trim: true
+	},
+	prodi: {
+		type: String,
+		trim: true
+	},
+	fakultas: {
+		type: String,
+		trim: true
+	},
+	tentang: {
+		type: String,
+		trim: true
+	}
+});
+
+
+
+
+
+
+database divisi
+
+const data_type = new mongoose.Schema({
+	username: {
+		type: String,
+		trim: true
+	},
+	password: {
+		type: String,
+		trim: true
+	},
+	nama: {
+		type: String,
+		trim: true
+	},
+	email: {
+		type: String,
+		trim: true
+	},
+	tentang: {
+		type: String,
+		trim: true
+	}
+});
+
+
+
+
+
+database pendaftaran
+
+const data_type = new mongoose.Schema({
+	divisi: {
+		type: String,
+		trim: true
+	},
+	nama: {
+		type: String,
+		trim: true
+	},
+	jkelamin: {
+		type: String,
+		trim: true
+	},
+	lahir_tempat: {
+		type: String,
+		trim: true
+	},
+	lahir_tanggal: {
+		type: String,
+		trim: true
+	},
+	telepon: {
+		type: String,
+		trim: true
+	},
+	nim: {
+		type: String,
+		trim: true
+	},
+	prodi: {
+		type: String,
+		trim: true
+	},
+	fakultas: {
+		type: String,
+		trim: true
+	},
+	tentang: {
+		type: String,
+		trim: true
+	}
+});
+
+
+
+
+
+
+
+database profil
+
+	nama_panjang: {
+		type: String,
+		trim: true
+	},
+	nama_pendek: {
+		type: String,
+		trim: true
+	},
+	foto: {
+		type: String,
+		trim: true
+	},
+	tanggal: {
+		type: String,
+		trim: true
+	},
+	moto: {
+		type: String,
+		trim: true
+	},
+	visi: {
+		type: String,
+		trim: true
+	},
+	misi: {
+		type: String,
+		trim: true
+	},
+	telepon: {
+		type: String,
+		trim: true
+	},
+	email: {
+		type: String,
+		trim: true
+	},
+	facebook: {
+		type: String,
+		trim: true
+	},
+	instagram: {
+		type: String,
+		trim: true
+	},
+	youtube: {
+		type: String,
+		trim: true
+	},
+	alamat: {
+		type: String,
+		trim: true
+	},
+	deskripsi: {
+		type: String,
+		trim: true
+	},
+	sejarah: {
+		type: String,
+		trim: true
+	}
+
+
+
+
+
+database berita
+
+	divisi: {
+		type: String,
+		trim: true
+	},
+	judul: {
+		type: String,
+		trim: true
+	},
+	tanggal: {
+		type: String,
+		trim: true
+	},
+	penyunting: {
+		type: String,
+		trim: true
+	},
+	isi: {
+		type: String,
+		trim: true
+	},
+	sumber: {
+		type: String,
+		trim: true
+	}
+
+
+

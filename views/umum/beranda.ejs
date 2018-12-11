@@ -1,0 +1,113 @@
+<!--Home Sections-->
+
+<section id="home" class="home bg-black fix">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="main_home text-center">
+                <div class="col-md-12">
+                    <div class="hello_slid">
+                        <% for(var i=0; i < berita.length; i++) { %>
+                            <div class="slid_item" style="background: url('<%= berita[i].gambar %>') no-repeat scroll  center center;">
+                                <div class="home_text ">
+                                    <h2 class="text-white"><i><%= berita[i].penyunting %></i></h2>
+                                    <h1 class="text-white"><strong><%= berita[i].judul %></strong></h1>
+                                    <h3 class="text-white">- <%= berita[i].tanggal %> -</h3>
+                                </div>
+
+                                <div class="home_btns m-top-40">
+                                    <a href="/berita/<%= berita[i].id %>" class="btn btn-primary m-top-20">Baca selengkapnya...</a>
+                                </div>
+                            </div><!-- End off slid item -->
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div><!--End off row-->
+    </div><!--End off container -->
+</section> <!--End off Home Sections-->
+
+
+
+<!--Business Section-->
+<section id="business" class="business bg-grey roomy-70">
+    <div class="container">
+        <div class="row">
+            <div class="main_business">
+                <div class="col-md-5">
+                    <div class="business_slid">
+                        <div class="slid_shap bg-grey"></div>
+                        <div class="business_items text-center">
+                            <div class="business_item">
+                                <div class="business_img" style="padding-top: 100px;">
+                                    <img src="https://scontent-sin6-1.cdninstagram.com/vp/404208c83cce478a1d3a8e6101c533aa/5CA3EC7B/t51.2885-15/sh0.08/e35/s640x640/42672341_2111664922179398_3905059161123199156_n.jpg" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="business_item">
+                                <div class="business_img">
+                                    <img src="https://scontent-sin6-1.cdninstagram.com/vp/bcb704fa9ed8f573fd0939831723c978/5CA70739/t51.2885-15/e35/34479904_339273313273327_1826283938948055040_n.jpg?_nc_ht=scontent-sin6-1.cdninstagram.com" alt="" />
+                                </div>
+                            </div>
+
+                            <div class="business_item">
+                                <div class="business_img">
+                                    <img src="https://scontent-sin6-1.cdninstagram.com/vp/ca75c818cfe98326fc0d7a71bb419d57/5CA6F006/t51.2885-15/e35/31465122_188829528599423_1220048789721579520_n.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="business_item sm-m-top-50">
+                        <h2 class="text-uppercase"><strong><%= data.nama_panjang %></strong></h2>
+                        <p class="m-top-20"><%= data.deskripsi %></p>
+
+                        <div class="business_btn">
+                            <a href="/tentang" class="btn btn-default m-top-20">Read More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End off Business section -->
+
+
+<!--Test section-->
+<section id="test" class="test roomy-60 fix">
+    <div class="container" style="padding-bottom: 200px">
+        <div class="row">                        
+            <div class="main_test fix">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="head_title text-center fix">
+                        <h2 class="text-uppercase">VISI DAN MISI</h2>
+                        <h5>  </h5>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="test_item fix">
+                        <div class="item_text">
+                            <h3 class="text-right">Visi</h3>
+
+                            <p><%= data.visi %></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="test_item fix sm-m-top-30">
+                        <div class="item_text">
+                            <h3 class="text-right">Misi</h3>
+
+                            <p><%= data.misi %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!-- End off test section -->

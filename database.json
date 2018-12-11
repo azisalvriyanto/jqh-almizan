@@ -1,0 +1,146 @@
+{
+	"profil": {
+		"informasi": {
+			"nama_panjang": "Jsdc Qscsd Hascs Al-Mizan",
+			"nama_pendek": "JQH Al-Mizan",
+			"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+			"tanggal": "17/08/2000",
+			"moto": "Still kiddie, keep wannabe.",
+			"visi": "Visi Gas teroos!11!1",
+			"misi": "Misi Gas teroos!11!1",
+		},
+
+		"kontak": {
+			"telepon": "+6282350952330",
+			"email": "azialvriyanto@gmail.com",
+			"facebook": "https://www.facebook.com/tegal6etar",
+			"instagram": "https://www.instagram.com/azialvriyanto",
+			"youtube": "https://www.youtube.com/channel/azialvriyanto",
+			"alamat": "Gang Meranti Nomor 151B, Janti"
+		},
+
+		"tentang": {
+			"deskripsi": "deskripsi cuyyyyyy",
+			"sejarah": "sejarah ceuuyushi"
+		}
+	},
+
+	"divisi": {
+		"tilawah": {
+			"profil": {
+				"username": "tilawah",
+				"password": "azialvriyanto",
+				"nama": "Tilawah",
+				"email": "tilawah@almizan.org",
+				"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+				"tentang": "Awewe"
+			},
+
+			"anggota": {
+				"Azis Alvriyanto": {
+					"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+					"lahir_tempat": "Tegal",
+					"lahir_tangal": "17/08/1998",
+					"telepon": "+6282350952330",
+					"nim": 16650036,
+					"prodi": "Teknik Informatika",
+					"fakultas": "Sains dan Teknologi",
+					"jabatan": "Ketua",
+					"periode": "2018/2019",
+					"tentang": "Still kiddie, keep wannabe."
+				},
+
+				"Alvi Maslakhati": {
+					"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+					"lahir_tempat": "Tegal",
+					"lahir_tangal": "17/08/1998",
+					"telepon": "+6282350952330",
+					"nim": 16130037,
+					"prodi": "Hukum",
+					"fakultas": "Syariah",
+					"jabatan": "Sekertaris",
+					"periode": "2018/2019",
+					"tentang": "Stand alone, but never alone."
+				}
+			}
+		}
+	},
+
+	"anggota": {
+		"tilawah": {
+			"Azis Alvriyanto": {
+				"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+				"lahir_tempat": "Tegal",
+				"lahir_tangal": "17/08/1998",
+				"telepon": "+6282350952330",
+				"nim": 16650036,
+				"prodi": "Teknik Informatika",
+				"fakultas": "Sains dan Teknologi",
+				"jabatan": "Ketua",
+				"periode": "2018/2019",
+				"tentang": "Still kiddie, keep wannabe."
+			},
+
+			"Alvi Maslakhati": {
+				"foto": "166dfdf43gsgdfgs5asd00sfs36sd.jpeg",
+				"lahir_tempat": "Tegal",
+				"lahir_tangal": "17/08/1998",
+				"telepon": "+6282350952330",
+				"nim": 16130037,
+				"prodi": "Hukum",
+				"fakultas": "Syariah",
+				"jabatan": "Sekertaris",
+				"periode": "2018/2019",
+				"tentang": "Stand alone, but never alone."
+			}
+		}
+	},
+
+	"berita": {
+		"tilawah": [
+			{
+				"tanggal": "2018/10/08",
+				"judul": "Flashsale 6A",
+				"penulis": "Azis Alvriyanto",
+				"isi": "blablabla",
+				"sumber": "Kalijaga Pers"
+			},
+
+			{
+				"tanggal": "2018/10/08",
+				"judul": "Flashsale 6A",
+				"penulis": "Azis Alvriyanto",
+				"isi": "Awewe",
+				"sumber": ""
+			}
+		]
+	},
+
+	"galeri": {
+		"tilawah": [
+			{
+				"tanggal": "2018/09/09",
+				"judul": "HUT Al-Mizan ke-48",
+				"penyunting": "Azis Alvriyanto",
+				"deskripsi": "Awewe"
+			}
+		]
+	},
+
+	"keuangan": {
+		"tilawan": {
+			"januari": true,
+			"februari": true,
+			"maret": true,
+			"april": false,
+			"mei": true,
+			"juni": false,
+			"juli": true,
+			"agustus": false,
+			"september": false,
+			"oktober": false,
+			"november": true,
+			"desember": false,
+		}
+	}
+}
